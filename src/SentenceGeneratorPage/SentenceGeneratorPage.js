@@ -70,7 +70,7 @@ class SentenceGeneratorPage extends Component {
                   this.setState ({
                     locationAdjective: word
                     })
-                if (wordType === 'loc')
+                if (wordType === 'location')
                      this.setState ({
                         location: word
                 })
@@ -105,7 +105,7 @@ class SentenceGeneratorPage extends Component {
                     this.setState ({
                         locationAdjective: word
                     }) 
-                if (wordType === 'loc')
+                if (wordType === 'location')
                 this.setState ({
                     location: word
                }) 
@@ -131,12 +131,12 @@ class SentenceGeneratorPage extends Component {
                 getGenrelessWord('sub-adj')
                 getGenrelessWord('subject')
                 getGenrelessWord('loc-adj')
-                getGenrelessWord('loc')
+                getGenrelessWord('location')
             } else {
                 getWord('sub-adj')
                 getWord('subject')
                 getWord('loc-adj')
-                getWord('loc')
+                getWord('location')
             }   
             console.log(this.state)  
         }
