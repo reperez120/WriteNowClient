@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
 
-.SentenceGenerator {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 h2 {
   text-align: center;
   font-family: 'Indie Flower', cursive;
@@ -44,127 +36,87 @@ fieldset {
 legend {
   display: none;
 }
-
+ 
 .radioButtons {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   margin-bottom: 3rem;
 }
 
+@media only screen and (min-width: 500px) {
+  .radioButtons {
+    display: flex;
+    flex-direction: row;
+  }
+
+}
+
 .scifiButton {
   display: flex;
-  flex-direction: row;
   background-size: contain;
   background-repeat: no-repeat;
   padding-left: 2rem;
   padding-top: 2rem;
-  margin-left: 10rem;
-  height: 2rem;
+  width: 5rem;
+  margin-bottom: 1rem;
   background-image: url("https://user-images.githubusercontent.com/46304321/62423783-bcd5af80-b6b4-11e9-9808-6045660d3d65.png");
-}
-
-@media only screen and (max-width: 500px) {
-  .scifiButton {
-    margin-left: 4rem;
-    height: 1rem;
-  }
 }
 
 .fantasyButton {
   display: flex;
-  flex-direction: row;
   background-size: contain;
   background-repeat: no-repeat;
   padding-left: 2rem;
   padding-top: 2rem;
-  margin-left: 10rem;
-  height: 2rem;
+  width: 5rem;
+  margin-bottom: 1rem;
   background-image: url("https://user-images.githubusercontent.com/46304321/62424289-71270400-b6bc-11e9-82c4-ff11b2bff12f.png");
-}
-
-
-@media only screen and (max-width: 500px) {
-  .fantasyButton {
-    margin-left: 4rem;
-    height: 1rem;
-  }
 }
 
 .horrorButton {
   display: flex;
-  flex-direction: row;
   background-size: contain;
   background-repeat: no-repeat;
   padding-left: 2rem;
   padding-top: 2rem;
-  margin-left: 10rem;
-  height: 2rem;
+  width: 5rem;
+  margin-bottom: 1rem;
   background-image: url("https://user-images.githubusercontent.com/46304321/62424325-eeeb0f80-b6bc-11e9-86b2-ba792d6ae3ad.png");
-}
-
-@media only screen and (max-width: 500px) {
-  .horrorButton {
-    margin-left: 4rem;
-    height: 1rem;
-  }
 }
 
 .westernButton {
   display: flex;
-  flex-direction: row;
   background-size: contain;
   background-repeat: no-repeat;
   padding-left: 2rem;
   padding-top: 2rem;
-  margin-left: 10rem;
-  height: 2rem;
+  width: 5rem;
+  margin-bottom: 1rem;
   background-image: url("https://user-images.githubusercontent.com/46304321/62424349-36719b80-b6bd-11e9-8545-278b86fd2920.png");
-}
-
-@media only screen and (max-width: 500px) {
-  .westernButton {
-    margin-left: 4rem;
-    height: 1rem;
-  }
 }
 
 .litButton {
   display: flex;
-  flex-direction: row;
   background-size: contain;
   background-repeat: no-repeat;
   padding-left: 2rem;
   padding-top: 2rem;
-  height: 2rem;
-  margin-left: 10rem;
+  width: 5rem;
+  margin-bottom: 1rem;
   background-image: url("https://user-images.githubusercontent.com/46304321/62424360-52753d00-b6bd-11e9-95de-1a4dfcc10b37.png");
-}
-
-@media only screen and (max-width: 500px) {
-  .litButton {
-    margin-left: 4rem;
-    height: 1rem;
-  }
 }
 
 .wildcardButton {
   display: flex;
-  flex-direction: row;
   background-size: contain;
   background-repeat: no-repeat;
   padding-left: 2rem;
   padding-top: 2rem;
-  margin-left: 10rem;
-  height: 2rem;
+  width: 5rem;
+  margin-bottom: 1rem;
   background-image: url("https://user-images.githubusercontent.com/46304321/62424384-910af780-b6bd-11e9-86b3-7474eb0af035.png");
-}
-
-@media only screen and (max-width: 500px) {
-  .wildcardButton {
-    margin-left: 4rem;
-    height: 1rem;
-  }
 }
 
 .download {
