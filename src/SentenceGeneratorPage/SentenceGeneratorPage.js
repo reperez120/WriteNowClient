@@ -10,7 +10,6 @@ class SentenceGeneratorPage extends Component {
         firstArticle: '',
         secondArticle: '',
         space: '',
-        punctuation: '',
         subjectAdjective: [],
         subject: [],
         verb: [],
@@ -117,8 +116,7 @@ class SentenceGeneratorPage extends Component {
         } 
 
         let getSentence = () => {
-            this.setState
-            ({
+            this.setState({
                 firstArticle: 'The',
                 secondArticle: 'the',
                 space: ' ',
@@ -137,8 +135,7 @@ class SentenceGeneratorPage extends Component {
                 getWord('subject')
                 getWord('loc-adj')
                 getWord('location')
-            }   
-            console.log(this.state)  
+            }     
         }
 
         getSentence()
@@ -151,14 +148,13 @@ class SentenceGeneratorPage extends Component {
             document.body.appendChild(element); 
             element.click();
         }
-
+        
     }  
 
     render() {
         const sentence = this.state.firstArticle + this.state.space + this.state.subjectAdjective + this.state.space + this.state.subject + this.state.space + this.state.verb + this.state.space + this.state.preposition + this.state.space + this.state.secondArticle + this.state.space + this.state.locationAdjective + this.state.space + this.state.location + this.state.punctuation
 
-      return (
-          
+      return (       
         <div className='SentenceGenerator'>
             <header className='appHeader'>
                 <h2 className='description'>
@@ -167,39 +163,38 @@ class SentenceGeneratorPage extends Component {
                     get a sentence that combines elements from all the genres.
                 </h2>
             </header>
-            <main> 
                 <form className='radioForm' onSubmit={this.handleFormSubmit}>
                     <fieldset>
                         <legend>literary genre</legend>
                         <div className='radioButtons'>
                             <label className='scifiButton'>
-                                <input id="scifi" type="radio" className='radioButton' value="scifi" name="option" 
+                                <input id="scifi" type="radio" className='radio' value="scifi" name="option" 
                                     checked={this.state.genre === 'scifi'}
                                     onChange={this.handleGenre}/> 
                             </label>
                             <label className='fantasyButton'>
-                                <input id="fantasy" type="radio" className='radioButton' value="fantasy" name="option" 
+                                <input id="fantasy" type="radio" className='radio' value="fantasy" name="option" 
                                     checked={this.state.genre === 'fantasy'}
                                     onChange={this.handleGenre}/> 
                             </label>
                             <label className='horrorButton'>
-                                <input id="horror" type="radio" className='radioButton' value="horror" name="option" 
+                                <input id="horror" type="radio" className='radio' value="horror" name="option" 
                                     checked={this.state.genre === 'horror'}
                                     onChange={this.handleGenre}/> 
                             </label>
                             <label className='westernButton'>
-                                <input id ="western" type="radio" className='radioButton' value="western" name="option" 
+                                <input id ="western" type="radio" className='radio' value="western" name="option" 
                                     checked={this.state.genre === 'western'}
                                     onChange={this.handleGenre}/> 
 
                             </label>
                             <label className='litButton'>
-                                <input id="lit" type="radio" className='radioButton' value="lit" name="option" 
+                                <input id="lit" type="radio" className='radio' value="lit" name="option" 
                                 checked={this.state.genre === 'lit'}
                                 onChange={this.handleGenre}/> 
                             </label>
                             <label className='wildcardButton'>
-                                <input id="wildcard" type="radio" className='radioButton' value="wildcard" name="option" 
+                                <input id="wildcard" type="radio" className='radio' value="wildcard" name="option" 
                                 checked={this.state.genre === 'wildcard'}
                                 onChange={this.handleGenre}/>
                             </label>
@@ -220,14 +215,13 @@ class SentenceGeneratorPage extends Component {
                 </h3>   
                 <input 
                     id="promptDownload" 
-                     value={sentence}
+                     defaultValue={sentence}
                 /> 
                     <button className="downloadButton"
                     onClick={this.downloadPrompt}>
                     {this.state.downloadPromptText}
                 </button>
                 <div className='credit'>images by Shane Kearney</div>
-            </main>
        </div>
       );
     } 
